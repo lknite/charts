@@ -23,10 +23,10 @@ argocd-pinniped-controller:
   ##
   argocdNamespace: "argocd"
 
-## @param extraVolumes Optionally specify extra list of additional volumes for WordPress pods
+## @param extraVolumes Optionally specify extra list of additional volumes
 ##
 extraVolumes: []
-## @param extraVolumeMounts Optionally specify extra list of additional volumeMounts for WordPress container(s)
+## @param extraVolumeMounts Optionally specify extra list of additional volumeMounts
 ##
 extraVolumeMounts: []
 
