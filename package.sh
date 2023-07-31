@@ -1,6 +1,10 @@
 #!/bin/bash
 
 #
+cp -r ../daytwo/daytwo-argocd-register-controller/chart/* charts/argocd-register-controller
+cp -r ../daytwo/daytwo-argocd-pinniped-controller/chart/* charts/argocd-pinniped-controller
+
+#
 helm package charts/argocd-register-controller --dependency-update
 helm package charts/argocd-pinniped-controller --dependency-update
 
