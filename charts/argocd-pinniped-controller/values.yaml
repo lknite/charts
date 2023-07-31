@@ -11,8 +11,8 @@ global:
   imagePullSecrets: []
   storageClass: ""
 
-## daytwo argocd-register-controller image
-## ref: https://github.com/lknite/daytwo/tree/main/daytwo-argocd-register-controller
+## daytwo argocd-pinniped-controller image
+## ref: https://github.com/lknite/daytwo/tree/main/daytwo-argocd-pinniped-controller
 image:
   repository: docker.io/lknite/argocd-pinniped-controller
   tag: latest

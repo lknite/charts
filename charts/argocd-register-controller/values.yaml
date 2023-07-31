@@ -18,8 +18,6 @@ image:
   tag: latest
   pullPolicy: Always
 
-## Bitnami WordPress image
-## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
 argocd-register-controller:
   ## @param managementCluster Comma separated list of names of clusterapi servers
   ##
