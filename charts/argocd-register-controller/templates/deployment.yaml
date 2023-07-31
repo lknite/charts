@@ -29,4 +29,12 @@ spec:
           value: {{ .Values.argocd-register-controller.argocdAuthToken }}
         - name: ARGOCD_NAMESPACE
           value: {{ .Values.argocd-register-controller.argocdNamespace }}
+        {{- if .Values.extraVolumeMounts }}
+        volumeMounts:
+          {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumeMounts "context" $) | nindent 12 }}
+        {{- end }}
+      {{- if .Values.extraVolumes }}
+      volumes:
+        {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumes "context" $) | nindent 8 }}
+      {{- end }}
 status: {}

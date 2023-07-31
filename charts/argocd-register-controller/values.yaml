@@ -32,3 +32,10 @@ argocd-register-controller:
   ## @param argocdNamespace Used if targeting an argocd installation in an alternative namespace
   ##
   argocdNamespace: "argocd"
+
+## @param extraVolumes Optionally specify extra list of additional volumes for WordPress pods
+##
+extraVolumes: []
+## @param extraVolumeMounts Optionally specify extra list of additional volumeMounts for WordPress container(s)
+##
+extraVolumeMounts: []
