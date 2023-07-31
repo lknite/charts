@@ -3,7 +3,7 @@ entries:
   argocd-pinniped-controller:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-31T16:10:10.938794593-04:00"
+    created: "2023-07-31T16:13:22.391547814-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -11,7 +11,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: A Helm chart for Kubernetes
-    digest: a49f1c8155c0eab1428a892ed5f0447d6f398af59c097ed80d5c7ae849e268d3
+    digest: 0ac1c5e7bb67007008f4ab4d7b8e3e2de8f6f319fc4256b5ef1c368a75f3c0a8
     name: argocd-pinniped-controller
     type: application
     urls:
@@ -20,7 +20,7 @@ entries:
   argocd-register-controller:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-31T16:10:10.940898457-04:00"
+    created: "2023-07-31T16:13:22.39370711-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -28,7 +28,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: A Helm chart for Kubernetes
-    digest: 856e380bc368f2999804d7691a97b38df61d0286996f6794a594223d06572f4e
+    digest: d571a503ca8ead1b069515d91d307aafd3ad1484b0ae5f017b936d47d4d02a0a
     name: argocd-register-controller
     type: application
     urls:
@@ -36,7 +36,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-31T16:10:10.940218449-04:00"
+    created: "2023-07-31T16:13:22.393006291-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -52,7 +52,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-31T16:10:10.93950596-04:00"
+    created: "2023-07-31T16:13:22.392272943-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -66,4 +66,4 @@ entries:
     urls:
     - https://lknite.github.io/charts/argocd-register-controller-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-31T16:10:10.937882702-04:00"
+generated: "2023-07-31T16:13:22.390537793-04:00"
