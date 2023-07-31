@@ -25,9 +25,9 @@ appVersion: "1.0"
 # We use some of bitnami's helm chart standards
 dependencies:
   - name: common
-    repository: https://repo.vmware.com/bitnami-files
-#    repository: oci://registry-1.docker.io/bitnamicharts
+#    repository: https://repo.vmware.com/bitnami-files
+    repository: oci://registry-1.docker.io/bitnamicharts
     tags:
       - bitnami-common
-    version: 2.6.0
-#    version: 2.x.x
+#    version: 2.6.0
+    version: 2.x.x
