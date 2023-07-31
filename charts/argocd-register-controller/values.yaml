@@ -21,11 +21,11 @@ image:
 register:
   ## @param managementCluster Comma separated list of names of clusterapi servers
   ##
-  managementCluster: ""
+  managementClusters: ""
 
-  ## @param argocdAuthToken Used when registering cluster with argocd
+  ## @param argocdAuthToken Secret containing 'token' key, used when registering cluster with argocd
   ##
-  argocdAuthToken: ""
+  argocdAuthTokenSecret: "authToken"
 
   ## @param argocdNamespace Used if targeting an argocd installation in an alternative namespace
   ##
