@@ -3,7 +3,23 @@ entries:
   argocd-pinniped-controller:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.048511542-04:00"
+    created: "2023-08-01T12:48:13.61943985-04:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Automatic pinniped kubeconfig generation via argocd
+    digest: bdd680fbcefb11517757a8c22c5017b2ad46c7d84f43adc6178ad43737401c71
+    name: argocd-pinniped-controller
+    type: application
+    urls:
+    - https://lknite.github.io/charts/argocd-pinniped-controller-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-08-01T12:48:13.616578757-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -19,7 +35,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.047725913-04:00"
+    created: "2023-08-01T12:48:13.614597284-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -35,7 +51,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.046951134-04:00"
+    created: "2023-08-01T12:48:13.612925504-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -51,7 +67,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.046196665-04:00"
+    created: "2023-08-01T12:48:13.611338765-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -67,7 +83,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.045427836-04:00"
+    created: "2023-08-01T12:48:13.609787387-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -84,7 +100,7 @@ entries:
   argocd-register-controller:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.0602731-04:00"
+    created: "2023-08-01T12:48:13.63223238-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -92,7 +108,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: Automatic cluster registration via argocd
-    digest: 13ae4d64a760007548e9ee1044d5eee9f93c74e4f0c30399485c1b736114153c
+    digest: c31361c7ddf295c2335794d7af36c85a50be16db1a8f7288a0c6b96328dc581a
     name: argocd-register-controller
     type: application
     urls:
@@ -100,7 +116,7 @@ entries:
     version: 0.0.9
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.059525491-04:00"
+    created: "2023-08-01T12:48:13.631437971-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -116,7 +132,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.058808132-04:00"
+    created: "2023-08-01T12:48:13.630645231-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -132,7 +148,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.058120895-04:00"
+    created: "2023-08-01T12:48:13.629833622-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -148,7 +164,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.057467057-04:00"
+    created: "2023-08-01T12:48:13.629035203-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -164,7 +180,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.056760639-04:00"
+    created: "2023-08-01T12:48:13.626077328-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -180,7 +196,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.054765926-04:00"
+    created: "2023-08-01T12:48:13.624212676-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -196,7 +212,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.049778567-04:00"
+    created: "2023-08-01T12:48:13.622231244-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -212,7 +228,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-01T12:47:51.04914887-04:00"
+    created: "2023-08-01T12:48:13.620828487-04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -226,4 +242,4 @@ entries:
     urls:
     - https://lknite.github.io/charts/argocd-register-controller-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-01T12:47:51.044517475-04:00"
+generated: "2023-08-01T12:48:13.607813334-04:00"
