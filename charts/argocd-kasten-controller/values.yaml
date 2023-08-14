@@ -1,0 +1,51 @@
+## @param global.imageRegistry Global Docker image registry
+## @param global.imagePullSecrets Global Docker registry secret names as an array
+## @param global.storageClass Global StorageClass for Persistent Volume(s)
+##
+global:
+  imageRegistry: ""
+  ## E.g.
+  ## imagePullSecrets:
+  ##   - myRegistryKeySecretName
+  ##
+  imagePullSecrets: []
+  storageClass: ""
+
+## daytwo argocd-kasten-controller image
+## ref: https://github.com/lknite/daytwo/tree/main/daytwo-argocd-kasten-controller
+image:
+  repository: docker.io/lknite/argocd-kasten-controller
+  tag: latest
+  pullPolicy: Always
+
+## @param argocdNamespace Used if targeting an argocd installation in an alternative namespace
+##
+argocdNamespace: "argocd"
+
+## @param primaryCluster The primary k10 cluster, all others will be added as secondaries
+## e.g. https://get.kasten.dev/v0.24.0/kasten-cli-linux-amd64
+##
+primaryCluster: ""
+
+## @param k10multiclusterVersion What version of k10multicluster to download and use inside container
+## e.g. https://github.com/kastenhq/external-tools/releases/download/6.0.4/k10multicluster_6.0.4_linux_amd64.tar.gz
+##
+k10multiclusterVersion: "6.0.4"
+
+## @param requiredLabel If defined, only argocd cluster secrets with label will be processed
+##
+requiredLabel: ""
+
+## @param env Use to define environment variables passed to kasten when generating kubeconfig
+## E.g. to define the "--oidc-issuer" use: PINNIPED_OIDC_ISSUER
+##
+env: []
+
+## @param extraVolumes Optionally specify extra list of additional volumes
+## (only enabled if persistence.enabled below)
+##
+extraVolumes: []
+## @param extraVolumeMounts Optionally specify extra list of additional volumeMounts
+## (only enabled if persistence.enabled below)
+##
+extraVolumeMounts: []

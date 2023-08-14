@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: {{.Release.Name}}-kasten-controller
+  name: {{.Release.Name}}-kasten-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{.Release.Name}}-kasten-controller
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: {{.Release.Name}}-kasten-controller
+    spec:
+      containers:
+      - name: {{.Release.Name}}-kasten-controller
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        resources: {}
+        env:
+        - name: ARGOCD_NAMESPACE
+          value: {{ .Values.argocdNamespace }}
+        - name: INSTALL_VERSION
+          value: "{{ .Values.k10multiclusterVersion }}"
+        - name: REQUIRED_LABEL
+          value: "{{ .Values.requiredLabel }}"
+        {{- if .Values.env }}
+        {{- include "common.tplvalues.render" (dict "value" .Values.env "context" $) | nindent 8 }}
+        {{- end }}
+        {{- if .Values.extraVolumeMounts }}
+        volumeMounts:
+          {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumeMounts "context" $) | nindent 12 }}
+        {{- end }}
+      {{- if .Values.extraVolumes }}
+      volumes:
+        {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumes "context" $) | nindent 8 }}
+      {{- end }}
+status: {}
